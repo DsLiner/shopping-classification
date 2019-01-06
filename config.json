@@ -1,32 +1,47 @@
 {
     "train_data_list": [
-        "../train.chunk.01",
-        "../train.chunk.02",
-        "../train.chunk.03",
-        "../train.chunk.04",
-        "../train.chunk.05",
-        "../train.chunk.06",
-        "../train.chunk.07",
-        "../train.chunk.08",
-        "../train.chunk.09"
+        "../data/train.chunk.01",
+        "../data/train.chunk.02",
+        "../data/train.chunk.03",
+        "../data/train.chunk.04",
+        "../data/train.chunk.05",
+        "../data/train.chunk.06",
+        "../data/train.chunk.07",
+        "../data/train.chunk.08",
+        "../data/train.chunk.09"
     ],
     "dev_data_list": [
-        "../dev.chunk.01"
+        "../data/dev.chunk.01"
     ],
     "test_data_list": [
-        "../test.chunk.01",
-        "../test.chunk.02"
+        "../data/test.chunk.01",
+        "../data/test.chunk.02"
     ],
-    "unigram_hash_size": 100000,
     "min_word_length": 2,
     "max_word_length": 31,
     "max_len": 32,
     "chunk_size": 20000,
-    "db_chunk_size": 100000,
-    "num_workers": 6,
+    "db_chunk_size": 120000,
+    "num_workers": 40,
     "num_predict_workers": 2,
-    "embd_size": 128,
-    "lr": 1e-4,
-    "num_epochs": 100,
-    "batch_size": 1024
+    "batch_size": 1024,
+    "image_size": 2048,
+
+    "bm_embd_size": 512,
+    "bm_lr": 1e-4,
+    "bm_num_epochs": 18,
+    "bm_lr_change_epoch": 12,
+    "bm_unigram_hash_size": 100000,
+
+    "s_embd_size": 512,
+    "s_lr": 3e-4,
+    "s_num_epochs": 15,
+    "s_lr_change_epoch": 12,
+    "s_unigram_hash_size": 120000,
+
+    "d_embd_size": 1024,
+    "d_lr": 3e-4,
+    "d_num_epochs": 13,
+    "d_lr_change_epoch": 10,
+    "d_unigram_hash_size": 120000
 }

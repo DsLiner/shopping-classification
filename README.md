@@ -1,6 +1,6 @@
 # shopping-classification
 
-팀 송골매의 `쇼핑몰 상품 카테고리 분류` 대회 참가용 코드입니다. 대회의 원본 코드(`https://github.com/kakao-arena/shopping-classification`)를 기반으로 작성하였습니다. (코드는 python2.7, keras, tensorflow, konlpy 기준으로 작성되었습니다.)
+팀 송골매의 `쇼핑몰 상품 카테고리 분류` 대회 참가용 코드입니다. 대회의 원본 코드(https://github.com/kakao-arena/shopping-classification)를 기반으로 작성하였습니다. (코드는 python2.7, keras, tensorflow, konlpy 기준으로 작성되었습니다.)
 
 ## 참가자
 
@@ -65,6 +65,10 @@
     - `python sum_tsv.py`
     - 위의 명령어를 이용해 생성된 `bmcate.tsv`, `scate.tsv`, `dcate.tsv` 파일을 합쳐서 최종 예측파일인 `output.tsv` 파일을 생성할 수 있습니다.
     - 이 명령어는 `dev`와 `test`에 대한 구분이 없으므로 `dev`와 `test` 데이터셋에 대한 예측이 끝날경우 각각 따로 실행해 주어야 합니다.
+
+## model 파일 다운로드 위치
+- 제출한 파일에 사용된 모델은 아래의 url에서 다운로드 받으실 수 있습니다.
+- https://1drv.ms/f/s!Aie6oAOsjTGjipkGyowLhIBJvP_aLQ
 
 ## 테스트 가이드라인
 학습데이터의 크기가 100GB 이상이므로 사용하는 장비에 따라서 설정 변경이 필요합니다. `config.json`에서 수정 가능한 설정 중에서 아래 항목들이 장비의 사양에 민감하게 영향을 받습니다.

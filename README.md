@@ -36,7 +36,7 @@ python classifier.py predict ../data/train/bm ../data/model/bm ../data/test/bm t
 python classifier.py predict ../data/train/s ../data/model/s ../data/test/s test scate.tsv s
 python classifier.py predict ../data/train/d ../data/model/d ../data/test/d test dcate.tsv d
 
-
+python sum_tsv.py
 
 dev ---------------------------------------------------------
 python data.py make_db dev --train_ratio=0.0 dm
